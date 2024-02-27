@@ -2,10 +2,12 @@
   <div>
     <h2>Catégories</h2>
     <ul>
-      <li v-for="categorie in categories" :key="categorie.nomCategorie">
-        <button @click="redirection(categorie.nomCategorie)"> {{ categorie.nomCategorie }}</button>
+      <li v-for="categorie in categories" :key="categorie">
+        <button @click="redirection(categorie)"> {{ categorie }}</button>
 
       </li>
+
+
     </ul>
   </div>
 </template>
