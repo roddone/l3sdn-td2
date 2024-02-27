@@ -1,12 +1,13 @@
 <script>
 export default {
-  props: ['categoryName'], // Définissez le nom de la prop correspondant au paramètre
+  props: ['categoryName'],
 };
 </script>
 
 <template>
     <div class="about">
-      <h1>List of {{ categoryName }}</h1>
+      <h1>Liste des {{ categoryName }}</h1>
+      <li v-for="product in productList" :key="product.id">{{ product.name }}</li>
     </div>
   </template>
   
