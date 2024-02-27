@@ -4,6 +4,7 @@
     <ul>
       <li v-for="categorie in categories" :key="categorie.nomCategorie">
         <button @click="redirection(categorie.nomCategorie)"> {{ categorie.nomCategorie }}</button>
+
       </li>
     </ul>
   </div>
