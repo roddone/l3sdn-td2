@@ -24,6 +24,7 @@ const products = [
   { id: 4, name: 'OnePlus 9', category: 'telephones', description: 'Yet another great phone' },
 ];
 
+
 // Trouver le produit correspondant à l'ID dans la liste des produits
 product.value = products.find(p => p.id === Number(productId.value));
 </script>
