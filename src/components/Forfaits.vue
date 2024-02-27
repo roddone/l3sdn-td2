@@ -1,11 +1,21 @@
 <template>
-  <div>
-    <h1>Forfaits</h1>
-    <!-- Contenu spécifique à la catégorie -->
-  </div>
-</template>
-<script>
-export default {
-  name: 'Forfaits'
-}
-</script>  
+    <div>
+      <h2>Marques de Tablettes</h2>
+      <ul>
+        <li v-for="marque in marques" :key="marque">
+          <router-link :to="`/produit/tablette/${marque}`">{{ marque }}</router-link>
+        </li>
+      </ul>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    name: 'Tablettes',
+    data() {
+      return {
+        marques: ['Forfait 1', 'Forfait 2', 'Forfait 3', 'Forfait 4']
+      };
+    }
+  };
+  </script>  

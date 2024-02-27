@@ -20,6 +20,4 @@
   };
   </script>
   
-  <style>
-  /* Styles pour votre liste, si nécessaire */
-  </style>  
+  
