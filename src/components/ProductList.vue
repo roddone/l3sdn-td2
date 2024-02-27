@@ -18,7 +18,7 @@
   const router = useRouter();
   const route = useRoute();
   const category = route.params.category;
-  const products = ref([]); // Replace with your products logic based on category
+  const products = ref([]); 
   
   function goToProductDetails(productId) {
     router.push(`/product/${productId}`);
