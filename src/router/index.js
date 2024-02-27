@@ -8,8 +8,21 @@ const routes = [
   { path: '/telephones', component: Telephones },
   { path: '/tablettes', component: Tablettes },
   { path: '/forfaits', component: Forfaits },
-  { path: '/panier', component: Panier },
-  { path: '/', redirect: '/telephones' } // Redirige vers téléphones par défaut
+  { path: '/', redirect: '/telephones' } ,// Redirige vers téléphones par défaut
+
+  {
+    path: '/produit/:categorie/:marque',
+    name: 'ProduitDetails',
+    component: () => import('../views/ProduitDetails.vue')
+  } ,
+  {
+    path: '/panier',
+    name: 'Panier',
+    component: () => import('../components/Panier.vue')
+  }
+  
+
+
 ]
 
 

@@ -1,11 +1,21 @@
 <template>
     <div>
-      <h1>Tablettes</h1>
-      <!-- Contenu spécifique à la catégorie -->
+      <h2>Marques de Tablettes</h2>
+      <ul>
+        <li v-for="marque in marques" :key="marque">
+          <router-link :to="`/produit/tablette/${marque}`">{{ marque }}</router-link>
+        </li>
+      </ul>
     </div>
   </template>
+  
   <script>
   export default {
-    name: 'Tablettes'
-  }
+    name: 'Tablettes',
+    data() {
+      return {
+        marques: ['Apple', 'Samsung', 'Microsoft', 'Lenovo']
+      };
+    }
+  };
   </script>  
