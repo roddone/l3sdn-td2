@@ -13,7 +13,7 @@ let cart = useCart().cart;
         Accueil
       </RouterLink>
 
-      <RouterLink to="/" class="bg-white text-black px-4 rounded-full">
+      <RouterLink to="/cart" class="bg-white text-black px-4 rounded-full">
         Panier {{ cart.length }}
       </RouterLink>
     </nav>
