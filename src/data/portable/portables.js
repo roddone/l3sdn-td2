@@ -1,11 +1,11 @@
-export default portable = [
+const portable = [
   {
     "id": 1,
-    "name": "Iphone XR",
+    "name": "Iphone 8",
     "prix": 500,
     "stockage": 100,
     "couleur": "rouge",
-    "photo" : "./Images/iphone8.jpg"
+    "photo" : "/Images/iphone8.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@ export default portable = [
     "prix": 400,
     "stockage": 100,
     "couleur": "bleu",
-    "photo" : "./Images/pixel7.jpg"
+    "photo" : "/Images/pixel7.jpg"
   },
   {
     "id": 3,
@@ -21,6 +21,8 @@ export default portable = [
     "prix": 1200,
     "stockage": 50,
     "couleur": "noir",
-    "photo" : "./Images/iphone15.jpg"
+    "photo" : "/Images/iphone15.jpg"
   }
 ]
+
+export default portable;

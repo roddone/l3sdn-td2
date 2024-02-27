@@ -1,4 +1,4 @@
-export default tablette = [
+const tablette = [
   {
     "id": 1,
     "name": "Ipad Pro 2022",
@@ -24,3 +24,5 @@ export default tablette = [
     "photo" : "./Images/ipadAir2022.webp"
   }
 ]
+
+export default tablette;

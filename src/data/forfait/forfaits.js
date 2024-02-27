@@ -1,4 +1,4 @@
-export default forfait =[
+const forfait = [
   {
     "id" : 1,
     "name": "forfait1",
@@ -18,3 +18,5 @@ export default forfait =[
     "giga": 50
   }
 ]
+
+export default forfait;
