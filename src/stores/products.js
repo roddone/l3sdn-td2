@@ -26,7 +26,7 @@ export const useProductsStore = defineStore('products', () => {
     },
     {
       id: 4,
-      name: 'Canape rouge 3 places',
+      name: 'Canapé rouge 3 places',
       type: 'canape',
       price: 790,
       url: '/product/canape/4'
@@ -40,7 +40,7 @@ export const useProductsStore = defineStore('products', () => {
     },
     {
       id: 6,
-      name: 'Canape 4 places',
+      name: 'Canapé 4 places',
       type: 'canape',
       price: 1150,
       url: '/product/canape/6'
