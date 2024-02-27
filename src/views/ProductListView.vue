@@ -1,7 +1,7 @@
 <script setup>
-import Chaise from '@/components/Chaise.vue';
-import Canape from '@/components/Canape.vue';
-import Pergola from '@/components/Pergola.vue';
+import Chaise from '@/components/Categories/Chaise.vue';
+import Canape from '@/components/Categories/Canape.vue';
+import Pergola from '@/components/Categories/Pergola.vue';
 
 import { RouterView, useRoute } from 'vue-router'
 

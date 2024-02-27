@@ -8,8 +8,14 @@ let cart = useCart().cart;
 <template>
   <div class="h-screen flex flex-col">
 
-    <nav class="w-full bg-red-500 h-11 text-2xl">
-      Cart : {{ cart.length }}
+    <nav class="w-full bg-red-500 text-2xl flex justify-between p-2">
+      <RouterLink to="/">
+        Accueil
+      </RouterLink>
+
+      <RouterLink to="/" class="bg-white text-black px-4 rounded-full">
+        Panier {{ cart.length }}
+      </RouterLink>
     </nav>
     <div class="flex-1 p-8">
 

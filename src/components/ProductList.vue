@@ -19,9 +19,8 @@ const open = (id) => {
   <div class="flex gap-8">
 
     <div class="bg-red-500 text-white p-8" v-for="chaise in products" :key="chaise.id">
-      {{ chaise.id }}
       <h1>{{ chaise.name }}</h1>
-      <p>{{ chaise.price }}</p>
+      <p>{{ chaise.price }}$</p>
 
       <button @click="open(chaise.id)">Ajouter au panier</button>
     </div>
