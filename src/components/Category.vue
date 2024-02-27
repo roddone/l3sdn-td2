@@ -1,12 +1,13 @@
 <template>
     <div>
-      <h2>Produits</h2>
+      <h2 class >Marques</h2>
       <ul>
-        <li v-for="marque in marques" :key="marque">
-          <button @click="redirection(marque)"> {{ marque }}</button>
-  
+        <li v-for="marque in marques" :key="marque" @click="redirection(marque)" class="list-item">
+            {{ marque }}
         </li>
+
       </ul>
+
     </div>
   </template>
   
@@ -16,12 +17,10 @@
   
   const { marques } = useMarquesStore()
   const router = useRouter();
-
   
-  function redirection(nomMarque){
-
+  function redirection(nomMarque) {
     router.push(`${router.currentRoute.value.params.category}/${nomMarque}`)
-
-
   }
   </script>
+
+  

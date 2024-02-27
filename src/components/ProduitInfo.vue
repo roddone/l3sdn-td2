@@ -1,8 +1,17 @@
+<style>
+@import "../assets/coloredbutton.css";
+</style>
 <template>
-    <div>product page</div>
-    <div>Nom : {{ produit?.nom }}</div>
-    <div>Prix : {{ produit?.description }}</div>
-    <button @click="useProductsStore().addToCart(produit)">Ajouter au panier</button>
+    <div class = "produit">
+        <div>product page</div>
+        <div>Nom : {{ produit?.nom }}</div>
+        <div>Prix : {{ produit?.prix }}</div>
+        <div class="img-produit"><img :src="'https://picsum.photos/200/300'"></div>
+        <button class="button" @click="useProductsStore().addToCart(produit)">Ajouter au panier</button>
+    </div>
+
+
+
 </template>
 
 <script setup>
