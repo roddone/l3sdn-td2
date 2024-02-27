@@ -5,45 +5,66 @@ export const useProductsStore = defineStore('products', () => {
   const products = ref([
     {
       id: 1,
-      name: 'Chaise',
-      price: 29,
+      name: 'Lot de 4 chaises en bois',
+      price: 90,
       type: 'chaise',
       url: '/product/chaise/1'
     },
     {
       id: 2,
-      name: 'Chaise 3',
-      price: 23,
+      name: 'Chaise à bascule',
+      price: 50,
       type: 'chaise',
       url: '/product/chaise/2'
     },
     {
       id: 3,
-      name: 'Chaise 4',
+      name: 'Chaise en plastique',
       type: 'chaise',
-      price: 24,
+      price: 10,
       url: '/product/chaise/3'
     },
     {
       id: 4,
-      name: 'canape',
+      name: 'Canape rouge 3 places',
       type: 'canape',
-      price: 49,
+      price: 790,
       url: '/product/canape/4'
     },
     {
       id: 5,
-      name: 'canape 2',
+      name: 'Canapé 8 places',
       type: 'canape',
-      price: 39,
+      price: 3060,
       url: '/product/canape/5'
     },
     {
       id: 6,
-      name: 'canape 3',
+      name: 'Canape 4 places',
       type: 'canape',
-      price: 59,
+      price: 1150,
       url: '/product/canape/6'
+    },
+    {
+      id: 7,
+      name: 'Pergola pvc',
+      type: 'pergola',
+      price: 900,
+      url: '/product/pergola/7'
+    },
+    {
+      id: 8,
+      name: 'Pergola metallique',
+      type: 'pergola',
+      price: 900,
+      url: '/product/pergola/8'
+    },
+    {
+      id: 9,
+      name: 'Pergola metal et or',
+      type: 'pergola',
+      price: 1200,
+      url: '/product/pergola/9'
     }
   ])
 
