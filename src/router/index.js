@@ -3,6 +3,7 @@ import HomePage from '../views/HomePage.vue'
 import Category from "../components/Category.vue";
 import ProduitInfo from "../components/ProduitInfo.vue";
 import Panier from "../components/Panier.vue";
+import ProduitsList from "../components/ProduitsList.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,9 +14,14 @@ const router = createRouter({
       component: HomePage
     },
     {
-      path: '/category/:name',
+      path: '/:category',
       name: 'category',
       component: Category
+    },
+    {
+      path: '/:category/:marque/',
+      name: 'marque',
+      component: ProduitsList
     },
     {
       path: '/produit/:id',

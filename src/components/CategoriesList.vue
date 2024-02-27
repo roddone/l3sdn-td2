@@ -6,8 +6,6 @@
         <button @click="redirection(categorie)"> {{ categorie }}</button>
 
       </li>
-
-
     </ul>
   </div>
 </template>
@@ -20,7 +18,7 @@ const { categories } = useCategoriesStore()
 const router = useRouter();
 
 function redirection(nomCategorie){
-  router.push(`/category/${nomCategorie}`)
+  router.push(`/${nomCategorie}`)
 }
 </script>
 
