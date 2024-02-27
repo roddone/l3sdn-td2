@@ -4,6 +4,8 @@ import HomePage from '../components/HomePage.vue';
 import ProductList from '../components/ProductList.vue';
 import ProductDetails from '../components/ProductDetails.vue';
 import ShoppingCart from '../components/ShoppingCart.vue';
+import Telephones from '../views/Telephones.vue';
+//import Tablettes from '../views/Tablettes.vue';
 
 
 const router = createRouter({
@@ -20,7 +22,22 @@ const router = createRouter({
       component: ProductDetails },
     { path: '/cart', 
       name: ShoppingCart,  
-      component: ShoppingCart }
+      component: ShoppingCart },
+      {
+        path: '/',
+        name: 'Home',
+        component: HomePage
+      },
+      {
+        path: '/telephones',
+        name: 'Telephones',
+        component: Telephones
+      },
+      {
+        path: '/tablettes',
+        name: 'Tablettes',
+        component: Tablettes
+      }
   ]
 });
 
