@@ -3,21 +3,25 @@
     <h2>Catégories</h2>
     <ul>
       <li v-for="categorie in categories" :key="categorie">
-        {{ categorie }}
+        <button @click="redirection(categorie)"> {{ categorie }}</button>
+
       </li>
+
+
     </ul>
   </div>
 </template>
 
 <script setup>
-import { useCategoriesStore } from '../stores/counter.js'
+import { useCategoriesStore } from '../stores/counter' 
+import { useRouter } from 'vue-router';
 
 const { categories } = useCategoriesStore()
-</script>
+const router = useRouter();
 
-
-<script setup>
-
+function redirection(nomCategorie){
+  router.push(`/category/${nomCategorie}`)
+}
 </script>
 
 <style scoped>
