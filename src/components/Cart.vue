@@ -1,12 +1,15 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import { useCart, useProductsStore } from '@/stores/products.js'
+import { computed } from 'vue'
 
 let cart = useCart().cart;
 let produits = useProductsStore().products;
 
-let filteredProductsFromListIds = produits.filter((product) => {
-  return cart.includes(product.id);
+console.log(cart);
+console.log(produits);
+const filteredProductsFromListIds = computed(() => {
+  return produits.filter((product) => cart.find((id) => id == product.id));
 });
 </script>
 
