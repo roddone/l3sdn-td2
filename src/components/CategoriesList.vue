@@ -1,6 +1,20 @@
 <template>
-  <div>listing...</div>
+  <div>
+    <h2>Catégories</h2>
+    <ul>
+      <li v-for="categorie in categories" :key="categorie.nomCategorie">
+        {{ categorie.nomCategorie }}
+      </li>
+    </ul>
+  </div>
 </template>
+
+<script setup>
+import { useCategoriesStore } from '../stores/counter.js'
+
+const { categories } = useCategoriesStore()
+</script>
+
 
 <script setup>
 
