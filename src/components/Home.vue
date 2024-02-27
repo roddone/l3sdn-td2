@@ -1,13 +1,31 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router' 
-import Home from './components/Home.vue'
+import { ref, provide } from 'vue';
+
+const animal = ref("");
+provide('animalKey', animal);
+
 </script>
 
 
 
 <template>
-<RouterView />
+  <div>
+  <div>
+<RouterLink to="/Liste/chien">CHIEN</RouterLink>
 
+ </div>
+ <div>
+<RouterLink to="/Liste/chat" >CHAT</RouterLink>
+ </div>
+ <div>
+<RouterLink to="/Liste/tortue" >TORTUE</RouterLink>
+ </div>
+ <div>
+<RouterLink to="/Liste/yeti">YETI</RouterLink>
+ </div>
+
+
+</div>
 </template>
 
 
