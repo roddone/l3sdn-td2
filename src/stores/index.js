@@ -2,10 +2,13 @@ import { defineStore } from 'pinia';
 
 export const useStore = defineStore('main', {
   state: () => ({
-    telephones: [],
-    tablettes: [],
+    telephone: [],
+    tablette: [],
     forfaits: [],
     panier: [],
+    menu: [],
+    marque: [],
+
   }),
   getters: {
   },
