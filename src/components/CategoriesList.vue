@@ -2,8 +2,8 @@
   <div>
     <h2>Catégories</h2>
     <ul>
-      <li v-for="categorie in categories" :key="categorie.nomCategorie">
-        {{ categorie.nomCategorie }}
+      <li v-for="categorie in categories" :key="categorie">
+        {{ categorie }}
       </li>
     </ul>
   </div>
