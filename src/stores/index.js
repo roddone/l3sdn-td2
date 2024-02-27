@@ -2,12 +2,12 @@ import { defineStore } from 'pinia';
 
 export const useStore = defineStore('main', {
   state: () => ({
-    telephone: [
+    telephones: [
       { id: 1, nom: 'iPhone 12', prix: 999.99, marque: 'Apple', description: 'Superbe téléphone avec écran Retina et double caméra.' },
       { id: 2, nom: 'Samsung Galaxy S21', prix: 899.99, marque: 'Samsung', description: 'Puissant téléphone Android avec écran AMOLED.' },
       { id: 3, nom: 'Google Pixel 5', prix: 799.99, marque: 'Microsoft', description: 'Smartphone avec une excellente caméra et une interface Android pure.' },
     ],
-    tablette: [
+    tablettes: [
       { id: 1, nom: 'iPad Pro', prix: 1299.99, marque: 'Apple', description: 'Tablette haut de gamme avec écran Liquid Retina et processeur M1.' },
       { id: 2, nom: 'Samsung Galaxy Tab S7', prix: 699.99, marque: 'Samsung', description: 'Tablette Android performante avec S Pen inclus.' },
       { id: 3, nom: 'Microsoft Surface Pro 7', prix: 899.99, marque: 'Microsoft', description: 'Tablette hybride avec clavier amovible et stylet Surface.' },
@@ -19,7 +19,7 @@ export const useStore = defineStore('main', {
     ],
     panier: [],
     menu: [],
-    marque: ["Apple", "Samsung", "Microsoft"],
+    marques: ["Apple", "Samsung", "Microsoft"],
 
   }),
   getters: {
