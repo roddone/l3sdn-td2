@@ -5,6 +5,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
+  <RouterLink to="/">Accueil</RouterLink>
   <RouterView />
 </template>
 
