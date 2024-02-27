@@ -1,12 +1,24 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
-export const useCounterStore = defineStore('counter', () => {
-  const count = ref(0)
-  const doubleCount = computed(() => count.value * 2)
-  function increment() {
-    count.value++
-  }
-
-  return { count, doubleCount, increment }
+export const usePanierStore = defineStore('panier', {
+  state: () => ref({ telephone : ref([]), tablette : ref([]), forfait : ref([])}),
+  getters: {
+    telephone: (state) => state.telephone,
+    tablette: (state) => state.tablette,
+    forfait: (state) => state.forfait,
+  },
+  actions: {
+    addPanier(id,type) {
+      if(type == "telephone"){
+        this.telephone.push(id);
+      }
+      if(type == "tablette"){
+        this.tablette.push(id);
+      }
+      if(type == "forfait"){
+        this.forfait.push(id);
+      }
+    },
+  },
 })
