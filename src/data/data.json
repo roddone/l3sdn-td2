@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nom": "iPhone 13",
+    "description": "Dernier smartphone d'Apple avec des performances exceptionnelles.",
+    "prix": 999,
+    "category": "Smartphones"
+  },
+  {
+    "id": 2,
+    "nom": "Samsung Galaxy S21",
+    "description": "Smartphone Android haut de gamme avec un superbe écran et une excellente caméra.",
+    "prix": 899,
+    "category": "Smartphones"
+  },
+  {
+    "id": 3,
+    "nom": "Google Pixel 6",
+    "description": "Téléphone Android avec une expérience logicielle propre et des fonctionnalités innovantes.",
+    "prix": 799,
+    "category": "Smartphones"
+  },
+  {
+    "id": 4,
+    "nom": "iPad Pro",
+    "description": "La tablette la plus puissante jamais conçue par Apple.",
+    "prix": 1099,
+    "category": "Tablettes"
+  }
+]
