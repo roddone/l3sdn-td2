@@ -1,4 +1,8 @@
 <script setup>
+import Chaise from '@/components/Chaise.vue';
+import Canape from '@/components/Canape.vue';
+import Pergola from '@/components/Pergola.vue';
+
 import { RouterView, useRoute } from 'vue-router'
 
 const route = useRoute()
@@ -7,8 +11,9 @@ const type = route.params.type;
 </script>
 <template>
   <div class="about">
-    <div v-if="type === 'toto'">TOto</div>
-    <h1>This is an product page</h1>
+    <Chaise v-if="type === 'chaise'"/>
+    <Canape v-if="type === 'canape'"/>
+    <Pergola v-if="type === 'pergola'"/>
   </div>
 </template>
 
