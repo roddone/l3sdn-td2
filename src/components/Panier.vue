@@ -1,5 +1,12 @@
 <template>
-  
+    <div>
+      <h1>Panier</h1>
+      <ul>
+        <li v-for="(article, index) in panier" :key="index">
+          {{ article.type | capitalize }} {{ article.titre }} - {{ article.description }}
+        </li>
+      </ul>
+    </div>
   </template>
   
   <script>
