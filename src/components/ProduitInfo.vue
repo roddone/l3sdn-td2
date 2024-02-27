@@ -2,6 +2,7 @@
     <div>product page</div>
     <div>Nom : {{ produit?.nom }}</div>
     <div>Prix : {{ produit?.description }}</div>
+    <button @click="useProductsStore().addToCart(produit)">Ajouter au panier</button>
 </template>
 
 <script setup>
