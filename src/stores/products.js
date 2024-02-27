@@ -68,5 +68,16 @@ export const useProductsStore = defineStore('products', () => {
     }
   ])
 
+
+
   return { products }
 })
+
+export const useCart = defineStore('cart', () => {
+  const cart = ref([])
+
+  const add = (id) => {
+    cart.value.push(id)
+  }
+  return { cart, add }
+});
