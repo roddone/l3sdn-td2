@@ -1,5 +1,5 @@
 <template>
-    <div>Panier</div>
+    <h2>PANIER !!!</h2>
     <div>
         <ul>
             <li v-for="produit in cart" :key="produit.id" @click="redirection(produit.id)" class="product-item">
