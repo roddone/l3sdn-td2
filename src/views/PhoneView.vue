@@ -44,17 +44,12 @@ const selectPhone = (phone) => {
   <div>
     <ul>
       <li v-for="phone in phoneList" :key="phone.id" @click="selectPhone(phone)">
-        {{ phone.phoneName }}
+        <span>{{ phone.phoneName }}</span>
       </li>
     </ul>
     <phone-info :phone="selectedPhone" v-if="selectedPhone" />
   </div>
 </template>
 
-<style>
-  .about {
-    min-height: 1px;
-    display: flex;
-    align-items: center;
-  }
+<style scoped>
 </style>

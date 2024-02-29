@@ -44,17 +44,12 @@ const selectTablette = (tablette) => {
   <div>
     <ul>
       <li v-for="tablette in tabletteList" :key="tablette.id" @click="selectTablette(tablette)">
-        {{ tablette.tabletteName }}
+        <span>{{ tablette.tabletteName }}</span>
       </li>
     </ul>
     <tablette-info :tablette="selectedTablette" v-if="selectedTablette" />
   </div>
 </template>
 
-<style>
-  .about {
-    min-height: 1px;
-    display: flex;
-    align-items: center;
-  }
+<style scoped>
 </style>
