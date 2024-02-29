@@ -38,11 +38,16 @@ const router = createRouter({
 router.push({ name: 'Home' }) // Route to Home by default
 </script>
 
+
+
 <template>
   <div id="app">
     <router-view />
   </div>
 </template>
+
+
+
 
 <style scoped>
 </style>
