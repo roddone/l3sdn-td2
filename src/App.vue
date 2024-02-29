@@ -35,7 +35,7 @@ const router = createRouter({
   routes
 })
 
-router.push({ name: 'Home' }) // Route to Home by default
+router.push({ name: 'Home' })
 </script>
 
 

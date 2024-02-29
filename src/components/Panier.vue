@@ -7,10 +7,13 @@ const panierStore = usePanierStore();
 
 <template>
     <div>
+        <RouterLink to="/">HOME</RouterLink>
+    </div>
+    <div>
         <h1>Panier</h1>
         <ul>
         <li v-for="item in panierStore.panier" :key="item.id">
-            {{ item.nom }} ({{ item.prix }}€) x {{ item.quantite }} = {{ item.prix * item.quantite }}€
+            {{ item.name }} ({{ item.prix }}€) x {{ item.quantite }} = {{ item.prix * item.quantite }}€
         </li>
         </ul>
     </div>

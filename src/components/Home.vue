@@ -10,22 +10,23 @@ provide('animalKey', animal);
 
 <template>
   <div>
+    <RouterLink to="/Liste/chien">CHIEN</RouterLink>
+  </div>
   <div>
-<RouterLink to="/Liste/chien">CHIEN</RouterLink>
-
- </div>
- <div>
-<RouterLink to="/Liste/chat" >CHAT</RouterLink>
- </div>
- <div>
-<RouterLink to="/Liste/tortue" >TORTUE</RouterLink>
- </div>
- <div>
-<RouterLink to="/Liste/yeti">YETI</RouterLink>
- </div>
-
-
-</div>
+    <RouterLink to="/Liste/chat">CHAT</RouterLink>
+  </div>
+  <div>
+    <RouterLink to="/Liste/tortue">TORTUE</RouterLink>
+  </div>
+  <div>
+    <RouterLink to="/Liste/yeti">YETI</RouterLink>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div>
+    <RouterLink to="/Panier">PANIER</RouterLink>
+  </div>
 </template>
 
 
@@ -92,5 +93,12 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
+}
+
+div {
+  background-color: rgb(248, 248, 248);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 </style>

@@ -1,26 +1,36 @@
 <template>
-    <div v-if="item" class="container">
-        <h1>Description de l'Article</h1>
-        <div class="item-details">
-            <h2>{{ item.name }}</h2>
-            <p>{{ item.description }}</p>
-            <p class="price">{{ item.prix }}€</p>
-            <button class="add-to-cart-btn">Ajouter au panier</button>
-        </div>
+    <div>
+        <RouterLink to="/">HOME</RouterLink> 
     </div>
-    <div v-else class="container">
-        <p>Article non trouvé.</p>
+    <div v-if="item" class="container">
+            <h1>Description de l'Article</h1>
+            <div class="item-details">
+                <h2>{{ item.name }}</h2>
+                <p>{{ item.description }}</p>
+                <p class="price">{{ item.prix }}€</p>
+                <button class="add-to-cart-btn" @click="panierStore.addProduit(item); showSuccessMessage = true">Ajouter au panier</button>
+                <div v-if="showSuccessMessage" class="success-message">
+                    Article ajouté au panier
+                </div>
+            </div>
+        </div>
+        <div v-else class="container">
+            <p>Article non trouvé.</p>
     </div>
 </template>
 
 <script setup>
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
+import { usePanierStore } from '@/stores/PanierStore';
+import { ref } from 'vue';
 import bdd from '@/assets/BDD.json';
 
+const showSuccessMessage = ref(false);
 const route = useRoute();
 const itemId = computed(() => Number(route.params.id));
 const item = computed(() => bdd.find(item => item.id === itemId.value));
+const panierStore = usePanierStore();
 </script>
 
 <style>
@@ -82,5 +92,14 @@ p {
 
 .add-to-cart-btn:active {
   transform: scale(0.95);
+}
+
+.success-message {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
 }
 </style>

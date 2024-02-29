@@ -36,6 +36,9 @@ const listesAnimaux = reactive({
 
 <template>
   <div>
+    <RouterLink to="/">HOME</RouterLink>
+  </div>
+  <div>
     <h2>Liste de {{ route.params.animal }}</h2>
     <ul>
       <li v-for="element in listesAnimaux[route.params.animal]" :key="element.id" class="list-item">

@@ -11,7 +11,12 @@ export const usePanierStore = defineStore('PanierStore', {
     },
     actions: {
         addProduit(produit) {
-        this.panier.push(produit)
+            if (produit.quantite) {
+                produit.quantite += 1;
+            } else {
+                produit.quantite = 1;
+                this.panier.push(produit);
+            }
         }
     }
 })
