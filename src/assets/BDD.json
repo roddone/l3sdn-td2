@@ -1,0 +1,123 @@
+[
+    {
+      "id": 11,
+      "name": "Berger allemand",
+      "description": "Loyal et courageux, ce chien est un excellent gardien et un compagnon dévoué.",
+      "prix": 1200
+    },
+    {
+      "id": 12,
+      "name": "Labrador Retriever",
+      "description": "Amical et plein d'énergie, le Labrador Retriever adore jouer et se baigner.",
+      "prix": 800
+    },
+    {
+      "id": 13,
+      "name": "Golden Retriever",
+      "description": "Connu pour sa douceur, le Golden Retriever est le parfait animal de famille.",
+      "prix": 900
+    },
+    {
+      "id": 14,
+      "name": "Bulldog",
+      "description": "Avec son allure unique et son caractère tranquille, le Bulldog est un compagnon calme et fiable.",
+      "prix": 1500
+    },
+    {
+      "id": 15,
+      "name": "Beagle",
+      "description": "Petit mais aventureux, le Beagle est toujours prêt à suivre un bon parfum.",
+      "prix": 700
+    },
+    {
+      "id": 21,
+      "name": "Siamois",
+      "description": "Avec ses yeux bleus captivants, le Siamois est expressif et très vocal.",
+      "prix": 600
+    },
+    {
+      "id": 22,
+      "name": "Persan",
+      "description": "Le chat Persan, avec son pelage luxuriant, est calme et aime le confort de son foyer.",
+      "prix": 500
+    },
+    {
+      "id": 23,
+      "name": "Maine Coon",
+      "description": "Cette grande race de chat est amicale, intelligente, et a un côté sauvage attrayant.",
+      "prix": 1000
+    },
+    {
+      "id": 24,
+      "name": "Sphynx",
+      "description": "Le Sphynx, connu pour son absence de fourrure, est affectueux et cherche constamment la chaleur humaine.",
+      "prix": 1200
+    },
+    {
+      "id": 25,
+      "name": "Bengal",
+      "description": "Avec son pelage tacheté, le Bengal est actif, curieux et adore jouer.",
+      "prix": 1100
+    },
+    {
+      "id": 31,
+      "name": "Tortue de Hermann",
+      "description": "Petite mais robuste, cette tortue terrestre est appréciée pour son caractère indépendant.",
+      "prix": 150
+    },
+    {
+      "id": 32,
+      "name": "Tortue grecque",
+      "description": "Adaptée à différents environnements, la tortue grecque aime explorer son territoire.",
+      "prix": 130
+    },
+    {
+      "id": 33,
+      "name": "Tortue léopard",
+      "description": "Avec son motif de carapace unique, la tortue léopard est paisible et solitaire.",
+      "prix": 250
+    },
+    {
+      "id": 34,
+      "name": "Tortue d'eau douce",
+      "description": "Vive et agile dans l'eau, cette tortue aime aussi se dorer au soleil.",
+      "prix": 100
+    },
+    {
+      "id": 35,
+      "name": "Tortue à tempes rouges",
+      "description": "Reconnaissable à ses marques distinctives, elle est active et aime l'eau.",
+      "prix": 90
+    },
+    {
+      "id": 41,
+      "name": "Yéti de l'Himalaya",
+      "description": "Mystérieux et insaisissable, ce yéti est réputé pour son agilité en montagne.",
+      "prix": 69
+    },
+    {
+      "id": 42,
+      "name": "Yéti des montagnes Rocheuses",
+      "description": "Solitaire et robuste, ce yéti est adapté aux climats froids et rigoureux.",
+      "prix": 69
+    },
+    {
+      "id": 43,
+      "name": "Yéti des Alpes",
+      "description": "Ce yéti, avec sa fourrure épaisse, est un expert dans la navigation des terrains enneigés.",
+      "prix": 69
+    },
+    {
+      "id": 44,
+      "name": "Yéti sibérien",
+      "description": "Dans les étendues glacées de Sibérie, ce yéti est un maître de la survie.",
+      "prix": 69
+    },
+    {
+      "id": 45,
+      "name": "Yéti urbain",
+      "description": "Adapté à la vie en ville, ce yéti est souvent aperçu lors de brèves apparitions nocturnes.",
+      "prix": 69
+    }
+  ]
+  

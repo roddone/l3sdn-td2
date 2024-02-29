@@ -14,9 +14,14 @@ const router = createRouter({
       component: () => import('../components/Liste.vue')
     },
     {
-      path: '/Description/:animal/:id',
+      path: '/Description/:id',
       name: 'Description',
       component: () => import('../components/Description.vue')
+    },
+    {
+      path: '/Panier',
+      name: 'Panier',
+      component: () => import('../components/Panier.vue')
     }
 
   ]

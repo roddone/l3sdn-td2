@@ -1,4 +1,5 @@
-<script>
+<script setup>
+
 import { usePanierStore } from '@/stores/PanierStore';
 
 const panierStore = usePanierStore();
