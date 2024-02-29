@@ -49,3 +49,11 @@ const selectPhone = (event) => {
     <phone-info :phone="selectedPhone" v-if="selectedPhone" />
   </div>
 </template>
+
+<style>
+  .about {
+    min-height: 1px;
+    display: flex;
+    align-items: center;
+  }
+</style>
