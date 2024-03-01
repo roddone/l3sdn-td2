@@ -7,6 +7,7 @@ export const usePanierStore = defineStore('panier', {
     forfait: [],
   }),
   getters: {
+    
   },
   actions: {
     addPanier(id, type) {
@@ -19,4 +20,11 @@ export const usePanierStore = defineStore('panier', {
       }
     },
   },
+    getPanier() {
+      return {
+        telephone: this.telephone,
+        tablette: this.tablette,
+        forfait: this.forfait,
+      };
+    },
 })
