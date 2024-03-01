@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { products } from '@/products'; // Adjust if your path is different
+import { products } from '@/products'; 
 
 export default {
   name: 'PlansList',
