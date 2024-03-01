@@ -36,14 +36,14 @@
   },
   {
     "id": 6,
-    "nom": "forfait sfr",
+    "nom": "Forfait sfr",
     "description": "4G 50mo",
     "prix": 11,
     "category": "Forfaits"
   },
   {
     "id": 7,
-    "nom": "forfait free",
+    "nom": "Forfait free",
     "description": "5G 50go",
     "prix": 20,
     "category": "Forfaits"
