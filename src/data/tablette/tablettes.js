@@ -5,7 +5,7 @@ const tablette = [
     prix: 500,
     stockage: 100,
     couleur: "rouge",
-    photo: "@/assets/ipadPro2022.webp",
+    photo: "../../assets/ipadPro2022.webp",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const tablette = [
     prix: 400,
     stockage: 100,
     couleur: "bleu",
-    photo: "@/assets/ipadMini2022.jpeg",
+    photo: "../../assets/ipadMini2022.jpeg",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const tablette = [
     prix: 1200,
     stockage: 50,
     couleur: "noir",
-    photo: "@/assets/ipadAir2022.jpg",
+    photo: "../../assets/ipadAir2022.jpg",
   },
 ];
 
