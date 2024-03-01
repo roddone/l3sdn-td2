@@ -1,14 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router';
+
+import ProductListView from '../views/ProductListView.vue';
 import ProductDetails from '../views/ProductDetails.vue';
+import ShoppingCart from '../views/ShoppingCart.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    { path: '/', component: Home },
     {
       path: '/categories/:categoryName',
       name: 'productList',
-      
-      component: () => import('../views/ProductListView.vue'),
+      component: ProductListView,
       props: true, 
     },
     {
@@ -17,6 +20,7 @@ const router = createRouter({
       component: ProductDetails,
       props: true,
     },
+    { path: '/panier', component: ShoppingCart, name: 'shoppingCart' },
   ]
 })
 
