@@ -39,6 +39,8 @@ header {
   font-size: 1.5rem;
   color: #333;
   text-decoration: none;
+  display: flex;
+  align-items: center; /* Center text vertically */
 }
 
 nav {
@@ -62,7 +64,7 @@ nav a:hover {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .logo {
