@@ -27,16 +27,22 @@
     "prix": 1099,
     "category": "Tablettes"
   },
-
   {
     "id": 5,
+    "nom": "iPad Pro 48 ",
+    "description": "La tablette la moins puissante jamais conçue par Apple.",
+    "prix": 200,
+    "category": "Tablettes"
+  },
+  {
+    "id": 6,
     "nom": "forfait sfr",
     "description": "4G 50mo",
     "prix": 11,
     "category": "Forfaits"
   },
   {
-    "id": 6,
+    "id": 7,
     "nom": "forfait free",
     "description": "5G 50go",
     "prix": 20,
