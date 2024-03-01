@@ -21,13 +21,18 @@ ul {
     list-style: none;
     padding: 0;
 }
+
 li {
+    display: flex;
+    width: fit-content;
     cursor: pointer;
     margin: 5px;
 }
+
 li span:hover {
     background-color: #e0e0e0;
 }
+
 li span {
     display: flex;
     width: fit-content;
@@ -37,6 +42,7 @@ li span {
     background-color: #f9f9f9;
     transition: background-color 0.3s ease;
 }
+
 .about {
     min-height: 1px;
     display: flex;
