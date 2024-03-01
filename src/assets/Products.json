@@ -224,8 +224,8 @@
       "items": [
         {
           "label": "Forfait Basic",
-          "type": "subscription",
-          "id": "21",
+          "type": "forfait",
+          "id": "1",
           "description": "The Basic subscription plan offers essential features for everyday users.",
           "details": {
             "Data": "5GB data",
@@ -235,8 +235,8 @@
         },
         {
           "label": "Forfait Premium",
-          "type": "subscription",
-          "id": "22",
+          "type": "forfait",
+          "id": "2",
           "description": "The Premium subscription plan is perfect for power users who need more data and features.",
           "details": {
             "Data": "20GB data",
@@ -246,8 +246,8 @@
         },
         {
           "label": "Forfait Business",
-          "type": "subscription",
-          "id": "23",
+          "type": "forfait",
+          "id": "3",
           "description": "The Business subscription plan offers tailored solutions for companies and enterprises.",
           "details": {
             "Data": "50GB data",

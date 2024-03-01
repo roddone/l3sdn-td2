@@ -49,7 +49,7 @@ for (const category of Products.Products) {
 const handleclick = (product) => {
 
   usepanier.addPanier(product.id, product.type);
-  console.log(usepanier.telephone);
+  console.log(usepanier.tablette);
 }
 
 
