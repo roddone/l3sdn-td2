@@ -2,7 +2,7 @@
 {
   "Products": [
     {
-      "type": "phone",
+      "type": "telephone",
       "items": [
         {
           "label": "Iphone 9",
@@ -147,7 +147,7 @@
           "items": [
             {
               "label": "iPad Air",
-              "type": "tablet",
+              "type": "tablette",
               "id": "1",
               "description": "The iPad Air combines powerful performance with a sleek design. It features a 10.9-inch Liquid Retina display, A14 Bionic chip, and support for Apple Pencil and Magic Keyboard.",
               "details": {
@@ -158,7 +158,7 @@
             },
             {
               "label": "iPad Pro",
-              "type": "tablet",
+              "type": "tablette",
               "id": "2",
               "description": "The iPad Pro is designed for professionals seeking power and versatility. It features an 11-inch Liquid Retina display, M1 chip, and support for Apple Pencil and Magic Keyboard.",
               "details": {
@@ -169,7 +169,7 @@
             },
             {
               "label": "iPad Mini",
-              "type": "tablet",
+              "type": "tablette",
               "id": "3",
               "description": "The iPad Mini offers portability without compromising performance. It features a 8.3-inch Liquid Retina display, A15 Bionic chip, and compatibility with Apple Pencil.",
               "details": {
@@ -185,7 +185,7 @@
           "items": [
             {
               "label": "Galaxy Tab S7",
-              "type": "tablet",
+              "type": "tablette",
               "id": "4",
               "description": "The Galaxy Tab S7 delivers PC-like productivity and entertainment in a sleek tablet form. It features a 11-inch LTPS TFT display, Snapdragon 865+ processor, and support for S Pen.",
               "details": {
@@ -196,7 +196,7 @@
             },
             {
               "label": "Galaxy Tab A7",
-              "type": "tablet",
+              "type": "tablette",
               "id": "5",
               "description": "The Galaxy Tab A7 offers immersive entertainment with a large display and powerful sound. It features a 10.4-inch TFT display, Snapdragon 662 processor, and quad-speaker system.",
               "details": {
@@ -212,7 +212,7 @@
           "items": [
             {
               "label": "Surface Pro 7",
-              "type": "tablet",
+              "type": "tablette",
               "id": "6",
               "description": "The Surface Pro 7 is a versatile 2-in-1 device designed for productivity and creativity. It features a 12.3-inch PixelSense display, Intel Core processors, and support for Surface Pen and Type Cover.",
               "details": {
@@ -223,7 +223,7 @@
             },
             {
               "label": "Surface Go 2",
-              "type": "tablet",
+              "type": "tablette",
               "id": "7",
               "description": "The Surface Go 2 is a compact and lightweight tablet perfect for on-the-go productivity. It features a 10.5-inch PixelSense display, Intel Pentium Gold processor, and support for Surface Pen and Type Cover.",
               "details": {
