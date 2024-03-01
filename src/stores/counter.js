@@ -10,3 +10,13 @@ export const useCounterStore = defineStore('counter', () => {
 
   return { count, doubleCount, increment }
 })
+
+export const cart = ref([]);
+
+export function addToCart(product) {
+  cart.value.push(product);
+}
+
+export function removeFromCart(productIndex) {
+  cart.value.splice(productIndex, 1);
+}

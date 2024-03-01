@@ -1,4 +1,7 @@
 <script setup>
+import { addToCart } from '../stores/counter.js';
+
+
 const props = defineProps(['forfait']);
 </script>
 
@@ -8,5 +11,8 @@ const props = defineProps(['forfait']);
     <p>Prix : {{ forfait.forfaitPrice }} €</p>
     <p>Description : {{ forfait.forfaitDesc }}</p>
     <img :src="forfait.forfaitImage" alt="forfait Image" style="max-width: 200px; max-height: 200px;" />
+  </div>
+  <div class="cart">
+    <button @click="addToCart">Ajouter au panier</button>
   </div>
 </template>

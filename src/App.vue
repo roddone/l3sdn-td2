@@ -4,16 +4,10 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div>
-    <header>
-      <div class="wrapper">
-        <nav>
-          <RouterLink class="link phonea" to="/phone">Les téléphones</RouterLink>
-          <RouterLink class="link tablettea" to="/tablette">Les tablettes</RouterLink>
-          <RouterLink class="link forfaita" to="/forfait">Les forfaits</RouterLink>
-        </nav>
-      </div>
-    </header>
-
+    <div class="wrapper">
+      <RouterLink class="link homea" to="/">🏠</RouterLink>
+      <RouterLink class="link cart" to="/cart">🛒</RouterLink>
+    </div>
     <RouterView />
   </div>
 </template>
