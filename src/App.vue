@@ -5,7 +5,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
       <nav>
-        <RouterLink to="/categories/Telephones">Téléphone</RouterLink>
+        <RouterLink to="/categories/Smartphones">Téléphone</RouterLink>
         <RouterLink to="/categories/Tablettes">Tablettes</RouterLink>
         <RouterLink to="/categories/Forfaits">Forfait</RouterLink>
       </nav>

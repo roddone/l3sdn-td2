@@ -1,4 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
+import ProductDetails from '../views/ProductDetails.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,8 +10,14 @@ const router = createRouter({
       
       component: () => import('../views/ProductListView.vue'),
       props: true, 
-    }
+    },
+    {
+      path: '/product/:id',
+      name: 'ProductDetails',
+      component: ProductDetails,
+      props: true,
+    },
   ]
 })
 
-export default router
+export default router;
