@@ -17,7 +17,15 @@ const clearCart = () => {
     <h2>Panier</h2>
     <ul>
       <li v-for="(product, index) in cartStore.items" :key="index">
-        {{ product.phoneName }} - {{ product.phonePrice }} € <!-- Utilisez les propriétés correctes ici -->
+        {{ product.phoneName }} - {{ product.phonePrice }} €
+        <button @click="removeFromCart(index)">Retirer du panier</button>
+      </li>
+      <li v-for="(product, index) in cartStore.items" :key="index">
+        {{ product.tabletteName }} - {{ product.tablettePrice }} €
+        <button @click="removeFromCart(index)">Retirer du panier</button>
+      </li>
+      <li v-for="(product, index) in cartStore.items" :key="index">
+        {{ product.forfaitName }} - {{ product.forfaitPrice }} €
         <button @click="removeFromCart(index)">Retirer du panier</button>
       </li>
     </ul>

@@ -39,12 +39,6 @@ const selectPhone = (phone) => {
   selectedPhone.value = phone;
 };
 
-const addToCart = () => {
-  if (selectedPhone.value) {
-    addToCart(selectedPhone.value);
-  }
-};
-
 </script>
 
 <template>

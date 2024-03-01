@@ -1,5 +1,12 @@
 <script setup>
+import { useCartStore } from '../stores/cart';
+
 const props = defineProps(['forfait']);
+const cartStore = useCartStore();
+
+const addToCart = () => {
+  cartStore.addToCart(props.forfait);
+};
 </script>
 
 <template>

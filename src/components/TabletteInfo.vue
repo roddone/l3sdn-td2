@@ -1,5 +1,13 @@
 <script setup>
+import { useCartStore } from '../stores/cart';
+
 const props = defineProps(['tablette']);
+const cartStore = useCartStore();
+
+const addToCart = () => {
+  cartStore.addToCart(props.tablette);
+};
+
 </script>
 
 <template>
