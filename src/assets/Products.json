@@ -1,0 +1,262 @@
+{
+  "Products": [
+    {
+      "type": "telephone",
+      "items": [
+        {
+          "label": "Iphone 9",
+          "type": "telephone",
+          "id": "1",
+          "description": "The iPhone 9 brings an affordable yet powerful smartphone experience. It features a 6.1-inch Liquid Retina display, A13 Bionic chip, and a single 12MP camera.",
+          "details": {
+            "Display": "6.1-inch Liquid Retina HD display",
+            "Processor": "A13 Bionic chip",
+            "Camera": "12MP Wide camera"
+          }
+        },
+        {
+          "label": "Iphone 10",
+          "type": "telephone",
+          "id": "2",
+          "description": "The iPhone 10 delivers exceptional performance and stunning visuals. With its 5.8-inch Super Retina XDR display, A14 Bionic chip, and advanced camera system, it's a flagship device.",
+          "details": {
+            "Display": "5.8-inch Super Retina XDR display",
+            "Processor": "A14 Bionic chip",
+            "Camera": "Triple 12MP Ultra Wide, Wide, and Telephoto cameras"
+          }
+        },
+        {
+          "label": "Iphone 11",
+          "type": "telephone",
+          "id": "3",
+          "description": "The iPhone 11 boasts powerful performance and impressive features. It features a 6.1-inch Liquid Retina display, A14 Bionic chip, and dual-camera system with Night mode.",
+          "details": {
+            "Display": "6.1-inch Liquid Retina HD display",
+            "Processor": "A14 Bionic chip",
+            "Camera": "Dual 12MP Ultra Wide and Wide cameras with Night mode"
+          }
+        },
+        {
+          "label": "Samsung 9",
+          "type": "telephone",
+          "id": "4",
+          "description": "The Samsung 9 offers a premium smartphone experience with its stunning design and powerful features. It features a 6.2-inch Dynamic AMOLED display, Exynos 990 processor, and versatile camera setup.",
+          "details": {
+            "Display": "6.2-inch Dynamic AMOLED display",
+            "Processor": "Exynos 990 processor",
+            "Camera": "Triple 12MP Wide, Ultra Wide, and Telephoto cameras"
+          }
+        },
+        {
+          "label": "Samsung 10",
+          "type": "telephone",
+          "id": "5",
+          "description": "The Samsung 10 is a feature-packed smartphone designed for productivity and entertainment. It features a 6.7-inch Dynamic AMOLED display, Snapdragon 865 processor, and pro-grade camera system.",
+          "details": {
+            "Display": "6.7-inch Dynamic AMOLED display",
+            "Processor": "Snapdragon 865 processor",
+            "Camera": "Quad 12MP Wide, Ultra Wide, Telephoto, and DepthVision cameras"
+          }
+        },
+        {
+          "label": "Samsung 11",
+          "type": "telephone",
+          "id": "6",
+          "description": "The Samsung 11 sets new standards for mobile innovation and performance. With its 6.9-inch Dynamic AMOLED display, Snapdragon 888 processor, and advanced camera features, it's a flagship device.",
+          "details": {
+            "Display": "6.9-inch Dynamic AMOLED display",
+            "Processor": "Snapdragon 888 processor",
+            "Camera": "Quad 108MP Wide, 12MP Ultra Wide, 10MP Telephoto, and 10MP Periscope Telephoto cameras"
+          }
+        },
+        {
+          "label": "Lenovo 9",
+          "type": "telephone",
+          "id": "7",
+          "description": "The Lenovo 9 offers a seamless smartphone experience with its powerful performance and long-lasting battery. It features a 6.7-inch AMOLED display, Snapdragon 865 processor, and high-capacity battery.",
+          "details": {
+            "Display": "6.7-inch AMOLED display",
+            "Processor": "Snapdragon 865 processor",
+            "Battery": "5000mAh battery"
+          }
+        },
+        {
+          "label": "Lenovo 10",
+          "type": "telephone",
+          "id": "8",
+          "description": "The Lenovo 10 is designed to keep you productive and entertained all day long. With its 6.5-inch IPS LCD display, MediaTek Helio G95 processor, and quad-camera system, it's a versatile device.",
+          "details": {
+            "Display": "6.5-inch IPS LCD display",
+            "Processor": "MediaTek Helio G95 processor",
+            "Camera": "Quad 64MP Wide, 8MP Ultra Wide, 2MP Macro, and 2MP Depth cameras"
+          }
+        },
+        {
+          "label": "Lenovo 11",
+          "type": "telephone",
+          "id": "9",
+          "description": "The Lenovo 11 combines performance and style in a sleek package. It features a 6.4-inch AMOLED display, Snapdragon 750G processor, and versatile camera setup.",
+          "details": {
+            "Display": "6.4-inch AMOLED display",
+            "Processor": "Snapdragon 750G processor",
+            "Camera": "Triple 48MP Wide, 8MP Ultra Wide, and 5MP Macro cameras"
+          }
+        },
+        {
+          "label": "One plus 9",
+          "type": "telephone",
+          "id": "10",
+          "description": "The OnePlus 9 delivers flagship-level performance and photography capabilities. It features a 6.55-inch Fluid AMOLED display, Snapdragon 888 processor, and Hasselblad camera system.",
+          "details": {
+            "Display": "6.55-inch Fluid AMOLED display",
+            "Processor": "Snapdragon 888 processor",
+            "Camera": "Triple 48MP main, 50MP ultra-wide, and 2MP monochrome cameras"
+          }
+        },
+        {
+          "label": "One plus 10",
+          "type": "telephone",
+          "id": "11",
+          "description": "The OnePlus 10 redefines speed and performance with its flagship specifications. It features a 6.7-inch Fluid AMOLED display, Snapdragon 898 processor, and advanced camera system.",
+          "details": {
+            "Display": "6.7-inch Fluid AMOLED display",
+            "Processor": "Snapdragon 898 processor",
+            "Camera": "Quad 64MP main, 48MP ultra-wide, 8MP telephoto, and 5MP color filter cameras"
+          }
+        },
+        {
+          "label": "One plus 11",
+          "type": "telephone",
+          "id": "12",
+          "description": "The OnePlus 11 offers cutting-edge features and premium design. It features a 6.8-inch Fluid AMOLED display, Snapdragon 898 processor, and Hasselblad camera system.",
+          "details": {
+            "Display": "6.8-inch Fluid AMOLED display",
+            "Processor": "Snapdragon 898 processor",
+            "Camera": "Triple 50MP main, 48MP ultra-wide, and 8MP telephoto cameras"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tablette",
+      "items": [
+        {
+          "label": "iPad Air",
+          "type": "tablette",
+          "id": "1",
+          "description": "The iPad Air combines powerful performance with a sleek design. It features a 10.9-inch Liquid Retina display, A14 Bionic chip, and support for Apple Pencil and Magic Keyboard.",
+          "details": {
+            "Display": "10.9-inch Liquid Retina display",
+            "Processor": "A14 Bionic chip",
+            "Support": "Apple Pencil and Magic Keyboard"
+          }
+        },
+        {
+          "label": "iPad Pro",
+          "type": "tablette",
+          "id": "2",
+          "description": "The iPad Pro is designed for professionals seeking power and versatility. It features an 11-inch Liquid Retina display, M1 chip, and support for Apple Pencil and Magic Keyboard.",
+          "details": {
+            "Display": "11-inch Liquid Retina display",
+            "Processor": "M1 chip",
+            "Support": "Apple Pencil and Magic Keyboard"
+          }
+        },
+        {
+          "label": "iPad Mini",
+          "type": "tablette",
+          "id": "3",
+          "description": "The iPad Mini offers portability without compromising performance. It features a 8.3-inch Liquid Retina display, A15 Bionic chip, and compatibility with Apple Pencil.",
+          "details": {
+            "Display": "8.3-inch Liquid Retina display",
+            "Processor": "A15 Bionic chip",
+            "Support": "Apple Pencil"
+          }
+        },
+        {
+          "label": "Samsung Galaxy Tab S7",
+          "type": "tablette",
+          "id": "4",
+          "description": "The Galaxy Tab S7 delivers PC-like productivity and entertainment in a sleek tablet form. It features a 11-inch LTPS TFT display, Snapdragon 865+ processor, and support for S Pen.",
+          "details": {
+            "Display": "11-inch LTPS TFT display",
+            "Processor": "Snapdragon 865+ processor",
+            "Support": "S Pen"
+          }
+        },
+        {
+          "label": "Samsung Galaxy Tab A7",
+          "type": "tablette",
+          "id": "5",
+          "description": "The Galaxy Tab A7 offers immersive entertainment with a large display and powerful sound. It features a 10.4-inch TFT display, Snapdragon 662 processor, and quad-speaker system.",
+          "details": {
+            "Display": "10.4-inch TFT display",
+            "Processor": "Snapdragon 662 processor",
+            "Sound": "Quad-speaker system"
+          }
+        },
+        {
+          "label": "Microsoft Surface Pro 7",
+          "type": "tablette",
+          "id": "6",
+          "description": "The Surface Pro 7 is a versatile 2-in-1 device designed for productivity and creativity. It features a 12.3-inch PixelSense display, Intel Core processors, and support for Surface Pen and Type Cover.",
+          "details": {
+            "Display": "12.3-inch PixelSense display",
+            "Processor": "Intel Core processors",
+            "Support": "Surface Pen and Type Cover"
+          }
+        },
+        {
+          "label": "Microsoft Surface Go 2",
+          "type": "tablette",
+          "id": "7",
+          "description": "The Surface Go 2 is a compact and lightweight tablet perfect for on-the-go productivity. It features a 10.5-inch PixelSense display, Intel Pentium Gold processor, and support for Surface Pen and Type Cover.",
+          "details": {
+            "Display": "10.5-inch PixelSense display",
+            "Processor": "Intel Pentium Gold processor",
+            "Support": "Surface Pen and Type Cover"
+          }
+        }
+      ]
+    },
+    {
+      "type": "forfait",
+      "items": [
+        {
+          "label": "Forfait Basic",
+          "type": "subscription",
+          "id": "21",
+          "description": "The Basic subscription plan offers essential features for everyday users.",
+          "details": {
+            "Data": "5GB data",
+            "Minutes": "Unlimited local minutes",
+            "Texts": "Unlimited local texts"
+          }
+        },
+        {
+          "label": "Forfait Premium",
+          "type": "subscription",
+          "id": "22",
+          "description": "The Premium subscription plan is perfect for power users who need more data and features.",
+          "details": {
+            "Data": "20GB data",
+            "Minutes": "Unlimited nationwide minutes",
+            "Texts": "Unlimited worldwide texts"
+          }
+        },
+        {
+          "label": "Forfait Business",
+          "type": "subscription",
+          "id": "23",
+          "description": "The Business subscription plan offers tailored solutions for companies and enterprises.",
+          "details": {
+            "Data": "50GB data",
+            "Minutes": "Unlimited nationwide minutes",
+            "Texts": "Unlimited worldwide texts",
+            "Extras": "Dedicated customer support"
+          }
+        }
+      ]
+    }
+  ]
+}

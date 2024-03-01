@@ -5,10 +5,6 @@
         <div class="panier-content">
           <div class="panier-content-item" v-for="item in store.panier" :key="item.id">
             <div class="panier-content-item-name">{{ item.name }}</div>
-            <div class="panier-content-item-price">{{ item.price }}</div>
-            <div class="panier-content-item-quantity">{{ item.quantity }}</div>
-            <button @click="store.remove(item.id)">-</button>
-            <button @click="store.add(item.id)">+</button>
           </div>
         </div>
         <div class="panier-total">
