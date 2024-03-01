@@ -26,5 +26,20 @@
     "description": "La tablette la plus puissante jamais conçue par Apple.",
     "prix": 1099,
     "category": "Tablettes"
+  },
+
+  {
+    "id": 5,
+    "nom": "forfait sfr",
+    "description": "4G 50mo",
+    "prix": 11,
+    "category": "Forfaits"
+  },
+  {
+    "id": 6,
+    "nom": "forfait free",
+    "description": "5G 50go",
+    "prix": 20,
+    "category": "Forfaits"
   }
 ]
