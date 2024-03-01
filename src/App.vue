@@ -8,6 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/categories/Smartphones">Téléphone</RouterLink>
         <RouterLink to="/categories/Tablettes">Tablettes</RouterLink>
         <RouterLink to="/categories/Forfaits">Forfait</RouterLink>
+        <RouterLink to="/cart">Panier</RouterLink>
       </nav>
   </header>
 

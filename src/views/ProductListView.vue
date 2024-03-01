@@ -1,6 +1,6 @@
 <script>
-import { fetchData } from '../stores/fetchObjects';
-import { ref, computed, onMounted, watch } from 'vue';
+import { fetchData } from '@/stores/fetchObjects';
+import { computed, onMounted, watch } from 'vue';
 import { useRouter } from 'vue-router';
 
 export default {
@@ -41,13 +41,19 @@ export default {
 <template>
   <div class="about">
     <h1>Liste des {{ categoryName }}</h1>
-    <ul>
+    <ul v-if="productList.length > 0">
       <li v-for="product in productList" :key="product.id" @click="redirectToProductDetails(product.id)">
         {{ product.nom }}
       </li>
     </ul>
+    <p v-else>
+      <ul>
+        <li>Aucun produit</li>
+      </ul>
+    </p>
   </div>
 </template>
+
 
 <style>
 @media (min-width: 1024px) {
@@ -56,5 +62,8 @@ export default {
     display: flex;
     align-items: center;
   }
+}
+li:hover {
+  cursor: pointer;
 }
 </style>

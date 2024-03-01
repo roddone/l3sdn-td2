@@ -1,7 +1,7 @@
 // fetchObjects.js
 import { defineStore } from 'pinia';
 
-import phonesData from '../data/data.json';
+import data from '../data/data.json';
 
 export const fetchData = defineStore({
   id: 'fetchData',
@@ -10,7 +10,7 @@ export const fetchData = defineStore({
   }),
   actions: {
     fetchObjectsFromCategory(categoryName) {
-      this.objectsList = phonesData.filter(phone => phone.category === categoryName);
+      this.objectsList = data.filter(item => item.category === categoryName);
     },
   },
 });
