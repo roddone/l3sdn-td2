@@ -1,15 +1,10 @@
-import { defineStore } from 'pinia';
+import { defineStore } from 'pinia'
 
-export const useCartStore = defineStore('cart', {
-  state: () => ({
-    cartItems: [],
-  }),
-  actions: {
-    addToCart(item) {
-      this.cartItems.push(item);
-    },
-    removeFromCart(itemIndex) {
-      this.cartItems.splice(itemIndex, 1);
-    }
+export const useCounterStore = defineStore('counter', () => {
+  const count = ref(0)
+  const doubleCount = computed(() => count.value * 2)
+  function increment() {
+    count.value++
   }
-});
+  return { count, doubleCount, increment }
+})
