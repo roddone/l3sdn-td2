@@ -5,10 +5,15 @@ const props = defineProps(['phone']);
 const cartStore = useCartStore();
 
 const addToCart = () => {
-  cartStore.addToCart(props.phone);
+  cartStore.addToCart({
+    type: 'phone',
+    ...props.phone,
+    price: props.phone.phonePrice,
+  });
 };
-
 </script>
+
+
 
 <template>
   <div>

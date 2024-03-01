@@ -13,15 +13,15 @@ export const useCartStore = defineStore('cart', {
 
     actions: {
         addToCart(product) {
-            this.items.push(product);
+          this.items.push(product);
         },
-
+      
         removeFromCart(index) {
-            this.items.splice(index, 1);
+          this.items.splice(index, 1);
         },
-
+      
         clearCart() {
-            this.items.split(0, this.totalItems())
+          this.items.splice(0, this.totalItems);
         },
-    },
+      },      
 });

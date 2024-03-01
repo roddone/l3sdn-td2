@@ -5,10 +5,15 @@ const props = defineProps(['tablette']);
 const cartStore = useCartStore();
 
 const addToCart = () => {
-  cartStore.addToCart(props.tablette);
+  cartStore.addToCart({
+    type: 'tablette',
+    ...props.tablette,
+    price: props.tablette.tablettePrice
+  });
 };
-
 </script>
+
+
 
 <template>
   <div>

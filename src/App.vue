@@ -5,8 +5,8 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <div>
     <div class="wrapper">
-      <RouterLink class="link homea" to="/">🏠</RouterLink>
-      <RouterLink class="link cart" to="/cart">🛒</RouterLink>
+      <RouterLink class="link" to="/">🏠</RouterLink>
+      <RouterLink class="link" to="/cart">🛒</RouterLink>
     </div>
     <RouterView />
   </div>

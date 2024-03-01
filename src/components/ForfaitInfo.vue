@@ -5,9 +5,16 @@ const props = defineProps(['forfait']);
 const cartStore = useCartStore();
 
 const addToCart = () => {
-  cartStore.addToCart(props.forfait);
+  cartStore.addToCart({
+    type: 'forfait',
+    ...props.forfait,
+    price: props.forfait.forfaitPrice,  // Assurez-vous d'ajouter la propriété price
+  });
 };
 </script>
+
+
+
 
 <template>
   <div>
