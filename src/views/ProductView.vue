@@ -5,7 +5,7 @@
       <p>Name: {{ product.label}}</p>
       <p>Type: {{ product.type }}</p>
       <p>Description: {{ product.description }}</p>
-      <!-- Add more fields as needed -->
+
     </div>
     <button @click="handleclick(product)">Add to panier</button>
   </div>
@@ -32,7 +32,7 @@ console.log(productType);
 
 
 
-// Filter the product with the matching id and type
+
 
 const product  = ref()
 
