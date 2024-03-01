@@ -51,6 +51,3 @@ const selectPhone = (phone) => {
     <phone-info v-if="selectedPhone" :phone="selectedPhone" />
   </div>
 </template>
-
-<style scoped>
-</style>

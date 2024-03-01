@@ -1,20 +1,21 @@
 <script setup>
 import { useCartStore } from '../stores/cart';
+import { useRouter } from 'vue-router';
 
 const props = defineProps(['forfait']);
 const cartStore = useCartStore();
+const router = useRouter();
 
 const addToCart = () => {
   cartStore.addToCart({
     type: 'forfait',
     ...props.forfait,
-    price: props.forfait.forfaitPrice,  // Assurez-vous d'ajouter la propriété price
+    price: props.forfait.forfaitPrice,
   });
+
+  router.push('/cart');
 };
 </script>
-
-
-
 
 <template>
   <div>

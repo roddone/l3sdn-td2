@@ -54,6 +54,3 @@ const selectTablette = (tablette) => {
     <tablette-info :tablette="selectedTablette" v-if="selectedTablette" />
   </div>
 </template>
-
-<style scoped>
-</style>

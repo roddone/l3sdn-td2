@@ -35,7 +35,7 @@ const getProductLabel = (product) => {
         <ul>
             <li v-for="(product, index) in cartStore.items" :key="index">
                 {{ getProductLabel(product) }} - {{ product.price }} €
-                <button @click="removeFromCart(index)">Retirer du panier</button>
+                <button class="removeCart" @click="removeFromCart(index)">Retirer du panier</button>
             </li>
         </ul>
         <div v-if="cartStore.totalItems > 0">

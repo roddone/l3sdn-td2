@@ -1,8 +1,10 @@
 <script setup>
 import { useCartStore } from '../stores/cart';
+import { useRouter } from 'vue-router';
 
 const props = defineProps(['tablette']);
 const cartStore = useCartStore();
+const router = useRouter();
 
 const addToCart = () => {
   cartStore.addToCart({
@@ -10,10 +12,10 @@ const addToCart = () => {
     ...props.tablette,
     price: props.tablette.tablettePrice
   });
+
+  router.push('/cart');
 };
 </script>
-
-
 
 <template>
   <div>

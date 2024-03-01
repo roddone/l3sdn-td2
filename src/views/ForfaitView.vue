@@ -36,6 +36,3 @@ const selectForfait = (forfait) => {
     <forfait-info :forfait="selectedForfait" v-if="selectedForfait" />
   </div>
 </template>
-
-<style scoped>
-</style>
