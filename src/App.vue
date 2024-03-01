@@ -4,12 +4,17 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
+    <div class="container">
+      <div class="logo">
+        <RouterLink to="/">Alban and Ariel</RouterLink>
+      </div>
       <nav>
-        <RouterLink to="/categories/Smartphones">Téléphone</RouterLink>
+        <RouterLink to="/categories/Smartphones">Smartphones</RouterLink>
         <RouterLink to="/categories/Tablettes">Tablettes</RouterLink>
-        <RouterLink to="/categories/Forfaits">Forfait</RouterLink>
+        <RouterLink to="/categories/Forfaits">Forfaits</RouterLink>
         <RouterLink to="/cart">Panier</RouterLink>
       </nav>
+    </div>
   </header>
 
   <RouterView />
@@ -17,63 +22,54 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 header {
-  line-height: 1.5;
-  max-height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo {
-  display: block;
-  margin: 0 auto 2rem;
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
 }
 
 nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+  display: flex;
+  gap: 1rem;
 }
 
 nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-nav a:first-of-type {
-  border: 0;
+nav a:hover {
+  background-color: #f0f0f0;
+  color: #333;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+    margin-bottom: 1rem;
   }
 
   nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
     margin-top: 1rem;
   }
 }
