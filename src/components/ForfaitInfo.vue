@@ -1,7 +1,4 @@
 <script setup>
-import { addToCart } from '../stores/counter.js';
-
-
 const props = defineProps(['forfait']);
 </script>
 

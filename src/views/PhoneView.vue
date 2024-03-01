@@ -54,7 +54,7 @@ const addToCart = () => {
         <span>{{ phone.phoneName }}</span>
       </li>
     </ul>
-    <phone-info :phone="selectedPhone" v-if="selectedPhone" />
+    <phone-info v-if="selectedPhone" :phone="selectedPhone" />
   </div>
 </template>
 
