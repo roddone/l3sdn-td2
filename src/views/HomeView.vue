@@ -1,9 +1,15 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
-
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div>
+    <ProduitTable />
+  </div>
 </template>
+
+<script>
+import ProduitTable from '@/components/ProduitTable.vue';
+
+export default {
+  components: {
+    ProduitTable,
+  },
+};
+</script>  

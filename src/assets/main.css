@@ -1,35 +1,116 @@
-@import './base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-a,
-.green {
+nav a {
+  color: #ffffff;
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  margin-right: 15px;
+  margin-left: 350px;
+
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+nav {
+  background-color: #e02509;
+  color: #ffffff;
+  padding: 10px 20px;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 50px solid #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #ffb300;
+  color: white;
+}
+
+p{
+  margin-left:60px;
+
+}
+
+.produit, .panier-objet {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 55px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.produit-image, .panier-image {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
+  object-fit: cover;
+}
+
+h1{
+  margin-left: 20px;
+  color: red;
+}
+
+h2{
+  margin-left: 40px;
+}
+
+h3{
+  margin-left: 40px;
+}
+
+button {
+  background-color: #ffb300;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #e02509;
+}
+
+
+.panier {
+  margin-top: 20px;
+}
+
+.panier h2, .panier h3 {
+  margin: 10px 0;
+  margin-left: 30px;
 }
