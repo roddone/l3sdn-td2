@@ -1,85 +1,35 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <div>
+    <nav class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <router-link to="/menu" class="text-lg font-bold">Menu</router-link>
+        <div>
+          <router-link to="/telephones" class="mr-4">Téléphones</router-link>
+          <router-link to="/tablettes" class="mr-4">Tablettes</router-link>
+          <router-link to="/forfaits" class="mr-4">Forfaits</router-link>
+          <router-link to="/marques" class="mr-4">Marques</router-link>
+          <router-link to="/panier" class="relative">
+            Panier
+            <span v-if="panier.length" class="absolute top-0 right-0 bg-red-500 rounded-full w-6 h-6 flex items-center justify-center text-xs">{{ panier.length }}</span>
+          </router-link>
+        </div>
+      </div>
+    </nav>
+    <div class="py-5">
+      <router-view/>
     </div>
-  </header>
-
-  <RouterView />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
+<script>
+import { computed } from 'vue';
+import { useStore } from '@/stores/index.js';
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+export default {
+  setup() {
+    const store = useStore();
+    const panier = computed(() => store.panier);
+    return { panier };
   }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
-</style>
+};
+</script>
